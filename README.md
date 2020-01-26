@@ -1,3 +1,44 @@
+# Windows Media Foundation installer for Proton
+Installer for Windows Media Foundation and Windows Media DLLs/codecs for Proton.
+
+This will make sure that Windows games requiring this will be able to find their necessary components to start and play videos. The Windows Media Foundation core set and all DLLS and codecs required to open Windows Media Videos are installed inside the Wine prefix of your Windows game.
+
+## Known working games with cut scenes:
+
+- Spyro Reignited Trilogy
+- Mortal Kombat 11
+- Injustice 2
+- Power Rangers: Battle for the Grid
+- Darksiders: Warmastered Edition
+- Borderlands 3
+- Resident Evil 2 Remastered
+- Resident Evil 3 Remastered
+- Resident Evil 7
+- PC Building Simulator
+- Dangonronpa V3
+- Super Lucky's Tale
+- Remnant: From the Ashes
+- BlazBlue Centralfiction
+- Bloodstained: Ritual of the Night
+- Crazy Machines 3
+- Devil May Cry 5
+- Wasteland 3
+
+Just set WINEPREFIX and the PROTON version you use for that particular game and run the script. For example, to install the components in Darksiders Warmastered Edition running under Proton 4.11:
+
+```
+WINEPREFIX="~/.local/share/Steam/steamapps/compatdata/462780/pfx" PROTON=4.11 ./install-mf-wmv.sh
+```
+
+The script will download all necessary files and leave them in the folder where the script is.
+
+`installcab.py` is exactly the same as upstream (https://github.com/tonix64/python-installcab/blob/master/installcab.py)
+
+## Dependencies
+- python2
+- cabextract
+- wine
+
 # python-installcab
 
 Extract and install components from cab based installers
@@ -40,12 +81,6 @@ python installcab.py ~/.cache/winetricks/win7sp1/windows6.1-KB976932-X64.exe wma
 
 will extract and install any manifest files and dlls with 'wmadmod' in their path.
 
-### install-mf examples
-
-You can also try the [install-mf.sh](install-mf.sh) file that installs WMF components from win7sp1 installer. There is also [install-mf-64.sh](install-mf-64.sh) for installing into a 64 bit wineprefix.
-
-Note you will need to run `winetricks mf` first so the installer will be cached (for now install-mf.sh does not download the installer, but relies on winetricks to have done it beforehand).
-
 ## What exactly it does
 
 1. Extracts from the cab file using cabextract with 'component' as filter
@@ -57,14 +92,7 @@ The software doesn't try to find out dependencies or be smart about where to ins
 
 It does not aim to fully support cabinet installers, but is capable of installing just parts from an installer, going a bit further than what is actually possible with 'proper' support.
 
-## Dependencies
-
-- python
-- cabextract
-- wine
-
 ## License
 
 This software is released into the Public Domain by use of the Unlicense, see the [LICENSE](LICENSE) file
 for more details.
-
