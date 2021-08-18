@@ -14,7 +14,7 @@ $ WINEPREFIX="$HOME/.steam/root/steamapps/compatdata/462780/pfx" PROTON="$HOME/.
 + WINEDEBUG=-all
 + '[' '!' -f windows6.1-KB976932-X64.exe ']'
 + '[' '!' -f Windows6.1-KB968211-x64-RefreshPkg.msu ']'
-+ python2 installcab.py windows6.1-KB976932-X64.exe mediafoundation
++ python3 installcab.py windows6.1-KB976932-X64.exe mediafoundation
 mediafoundation
 - amd64_microsoft-windows-mediafoundation_31bf3856ad364e35_6.1.7601.17514_none_fa8534ab236134c4.manifest (win64)
 - wow64_microsoft-windows-mediafoundation_31bf3856ad364e35_6.1.7601.17514_none_04d9defd57c1f6bf.manifest (wow64)
@@ -23,29 +23,29 @@ mediafoundation
 - mf.dll -> /home/slaanesh/.steam/root/steamapps/compatdata/462780/pfx/drive_c/windows/syswow64
 wineserver: using server-side synchronization.
 wine: RLIMIT_NICE is <= 20, unable to use setpriority safely
-+ python2 installcab.py windows6.1-KB976932-X64.exe mf_
++ python3 installcab.py windows6.1-KB976932-X64.exe mf_
 mf
 - amd64_microsoft-windows-mf_31bf3856ad364e35_6.1.7601.17514_none_ab34ec409a77d93c.manifest (win64)
 - wow64_microsoft-windows-mf_31bf3856ad364e35_6.1.7601.17514_none_b5899692ced89b37.manifest (wow64)
-+ python2 installcab.py windows6.1-KB976932-X64.exe mfreadwrite
++ python3 installcab.py windows6.1-KB976932-X64.exe mfreadwrite
 mfreadwrite
 - amd64_microsoft-windows-mfreadwrite_31bf3856ad364e35_6.1.7601.17514_none_177bed732ea3f85f.manifest (win64)
 - wow64_microsoft-windows-mfreadwrite_31bf3856ad364e35_6.1.7601.17514_none_21d097c56304ba5a.manifest (wow64)
 - mfreadwrite.dll -> /home/slaanesh/.steam/root/steamapps/compatdata/462780/pfx/drive_c/windows/system32
 - mfreadwrite.dll -> /home/slaanesh/.steam/root/steamapps/compatdata/462780/pfx/drive_c/windows/syswow64
-+ python2 installcab.py windows6.1-KB976932-X64.exe wmadmod
++ python3 installcab.py windows6.1-KB976932-X64.exe wmadmod
 wmadmod
 - amd64_microsoft-windows-wmadmod_31bf3856ad364e35_6.1.7601.17514_none_e474f0ac34979bc4.manifest (win64)
 - x86_microsoft-windows-wmadmod_31bf3856ad364e35_6.1.7601.17514_none_885655287c3a2a8e.manifest (win32)
 - wmadmod.dll -> /home/slaanesh/.steam/root/steamapps/compatdata/462780/pfx/drive_c/windows/system32
 - wmadmod.dll -> /home/slaanesh/.steam/root/steamapps/compatdata/462780/pfx/drive_c/windows/syswow64
-+ python2 installcab.py windows6.1-KB976932-X64.exe wmvdecod
++ python3 installcab.py windows6.1-KB976932-X64.exe wmvdecod
 wmvdecod
 - amd64_microsoft-windows-wmvdecod_31bf3856ad364e35_6.1.7601.17514_none_20b089c0f6efacae.manifest (win64)
 - x86_microsoft-windows-wmvdecod_31bf3856ad364e35_6.1.7601.17514_none_c491ee3d3e923b78.manifest (win32)
 - wmvdecod.dll -> /home/slaanesh/.steam/root/steamapps/compatdata/462780/pfx/drive_c/windows/system32
 - wmvdecod.dll -> /home/slaanesh/.steam/root/steamapps/compatdata/462780/pfx/drive_c/windows/syswow64
-+ python2 installcab.py windows6.1-KB976932-X64.exe wmadmod
++ python3 installcab.py windows6.1-KB976932-X64.exe wmadmod
 wmadmod
 - amd64_microsoft-windows-wmadmod_31bf3856ad364e35_6.1.7601.17514_none_e474f0ac34979bc4.manifest (win64)
 - x86_microsoft-windows-wmadmod_31bf3856ad364e35_6.1.7601.17514_none_885655287c3a2a8e.manifest (win32)
@@ -60,7 +60,7 @@ Extracting cabinet: Windows6.1-KB968211-x64-RefreshPkg.msu
   extracting Windows6.1-KB968211-x64-RefreshPkg.cab
 
 All done, no errors.
-+ python2 installcab.py Windows6.1-KB968211-x64-RefreshPkg.cab mfplat
++ python3 installcab.py Windows6.1-KB968211-x64-RefreshPkg.cab mfplat
 mfplat
 Windows6.1-KB968211-x64-RefreshPkg.cab: WARNING; possible 6920 extra bytes at end of file.
 - x86_microsoft-windows-mfplat.resources_31bf3856ad364e35_6.1.7600.16385_de-de_5bc1c119a8bd5a47.manifest (win32)

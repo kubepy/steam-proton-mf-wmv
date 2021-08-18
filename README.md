@@ -42,5 +42,5 @@ The script will download all necessary files and leave them in the folder where 
 `installcab.py` is exactly the same as upstream (https://github.com/tonix64/python-installcab/blob/master/installcab.py)
 
 ## Dependencies
-- python2
+- python3
 - cabextract
