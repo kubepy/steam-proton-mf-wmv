@@ -36,6 +36,10 @@ WINEPREFIX="$HOME/.steam/root/steamapps/compatdata/462780/pfx" \
   PROTON="$HOME/.steam/root/steamapps/common/Proton - Experimental/files" \
   ./install-mf-wmv.sh
 ```
+e.g.
+```
+WINEPREFIX="/home/deck/.local/share/Steam/steamapps/compatdata/2191660/pfx" PROTON="/home/deck/.local/share/Steam/steamapps/common/Proton 9.0 (Beta)/files" ./install-mf-wmv.sh
+```
 
 The script will download all necessary files and leave them in the folder where the script is.
 
