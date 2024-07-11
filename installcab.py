@@ -213,7 +213,9 @@ def install_dll(dll_path):
     dest_dir = get_dll_destdir(dll_path)
     file_name = os.path.basename(dll_path)
     print("- %s -> %s" % (file_name, dest_dir))
-    shutil.copy(dll_path, dest_dir)
+    #shutil.copy(dll_path, dest_dir)
+    cmd = ["cp", "-f" ,dll_path, os.path.join(dest_dir, file_name)]
+    subprocess.call(cmd)
     register_dll(os.path.join(dest_dir, file_name))
 
 def install_regfile(path, reg_file, arch):
