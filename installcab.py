@@ -216,6 +216,8 @@ def install_dll(dll_path):
     #shutil.copy(dll_path, dest_dir)
     cmd = ["cp", "-f" ,dll_path, os.path.join(dest_dir, file_name)]
     subprocess.call(cmd)
+    cmd = ["chmod", "555" ,dll_path, os.path.join(dest_dir, file_name)]
+    subprocess.call(cmd)
     register_dll(os.path.join(dest_dir, file_name))
 
 def install_regfile(path, reg_file, arch):
